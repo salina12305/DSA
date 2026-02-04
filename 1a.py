@@ -5,7 +5,6 @@ def maxPoints(customer_locations):
     n = len(customer_locations)
     if n <= 2:
         return n
-
     max_points = 0
 
     for i in range(n):
@@ -30,8 +29,6 @@ def maxPoints(customer_locations):
         current_max = max(slope_count.values(), default=0) + 1
         max_points = max(max_points, current_max)
     return max_points
-
-
 if __name__ == "__main__":
     test_locations = [[1,1], [2,2], [3,3], [1,5], [4,1]]
     result = maxPoints(test_locations)
